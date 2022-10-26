@@ -19,6 +19,10 @@ Please note the following.
 
 * The exam is due at the deadline. Missing exams will receive a zero. 
 
+* Each problem on the test is worth 6.25 pts.
+  + Code to Fix x 5
+  + Q's x 11
+
 * Best of luck.
 
 ## Questions for the Midterm Examination
