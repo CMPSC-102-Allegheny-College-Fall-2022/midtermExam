@@ -55,14 +55,14 @@ $F_n = \frac{ ( \frac{(1 + \sqrt(5) )}{2} )^{n}-( \frac{(1 - \sqrt(5) )}{2} )^{n
 
 ## Task to Complete
 
-Finish the below code to apply Binet's formula to calulate Fibonacci values according to sequence position in the sequence. It is suggested that you use Jupyter to complete your code and then to copy and paste the code back into the below fenced-in code area.
+Finish the below code to apply Binet's formula to calculate Fibonacci values according to sequence position in the sequence. It is suggested that you use Jupyter to complete your code and then to copy and paste the code back into the below fenced-in code area.
 
 ### Code to Fix
 
 ``` python
 import math
 def calcFib(n:int) -> None:
-    """ a function that takes an integer to be applied to Binet's formula to determine the Finobacci Sequence value at the loction."""
+    """ a function that takes an integer to be applied to Binet's formula to determine the Fibonacci Sequence value at the location."""
     # TODO: Add Binet's Formula to complete calculation.
     # Note it may be more convenient to chop
     # up Binet's formula into smaller groups
@@ -136,8 +136,8 @@ def lucas(a:int, b:int, n:int) -> None:
     currSeqVal = 1
     print(f"\t Lucas: {a}")
     print(f"\t Lucas: {b}")
-    while #TODO complete the condition to terminate loop
-        #TODO implement system of equations to calculate Lucas numbers. 
+    while # TODO complete the condition to terminate loop
+        # TODO implement system of equations to calculate Lucas numbers. 
 
         print(f"\t Lucas: {currSeqVal}")
 # end of lucas
@@ -175,7 +175,7 @@ TODO
 ```
 
 #### Q4
-Explain how the `while` function is able to stop the iterations at a set point after the code has been executed. Describe the specific pointat which the iteration halts?
+Explain how the `while` function is able to stop the iterations at a set point after the code has been executed. Describe the specific point at which the iteration halts?
 
 ```
 
@@ -265,7 +265,7 @@ TODO
 ---
 # 4. An Entropy Calculator
 
-In a part of mathemematics called Information Theory, Shannon's Entropy is a measurement of the uncertainty for the occurrence of certain event. Probabilities pertaining to the event are used as inputs for the calculation of uncertainty. To calculate the value of Shannon's Entropy, called $H(X)$, we use the below equation for the $N$ probabilities.
+In a part of mathematics called Information Theory, Shannon's Entropy is a measurement of the uncertainty for the occurrence of certain event. Probabilities pertaining to the event are used as inputs for the calculation of uncertainty. To calculate the value of Shannon's Entropy, called $H(X)$, we use the below equation for the $N$ probabilities.
 
 $H(X) = - \sum_{i = 1}^{N} \log_2 p(x_i) * p(x_i)$
 
@@ -273,40 +273,7 @@ Where $p(x_i)$ is one of the $N$ probabilities.
 
 ### Code to Fix
 
-Complete the below code to calculate the Shannon's entropy value from the inputted list of probabilies in `a_list`.
-
-``` python
-import math
-
-def getEntropy(prob:list) -> None:
-    """ Calculate the entropy from an inputted list."""
-    entropy = 0 
-    for i in prob:
-        print(f"processing frequency : {i}")
-        entropy = entropy - (i*math.log(i,2))
-    print(f"\nEntropy: {entropy}")
-# end of getEntropy()
-
-a_list = [2/10, 3/10, 2/10, 1/10, 1/10, 1/10]
-getEntropy(a_list)
-```
-
-## Output
-
-Your output should look like the following. 
-
-```
-processing frequency : 0.2
-processing frequency : 0.3
-processing frequency : 0.2
-processing frequency : 0.1
-processing frequency : 0.1
-processing frequency : 0.1
-
-Entropy: 2.4464393446710155
-```
-
-### Code to Fix
+Complete the below code to calculate the Shannon's entropy value from the inputted list of probabilities in `a_list`.
 
 ``` python
 import math
@@ -327,6 +294,21 @@ def getEntropy(prob:list) -> None:
 
 a_list = [2/10, 3/10, 2/10, 1/10, 1/10, 1/10]
 getEntropy(a_list)
+```
+
+## Output
+
+Your output should look like the following. 
+
+```
+processing frequency : 0.2
+processing frequency : 0.3
+processing frequency : 0.2
+processing frequency : 0.1
+processing frequency : 0.1
+processing frequency : 0.1
+
+Entropy: 2.4464393446710155
 ```
 
 #### Q8
